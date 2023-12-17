@@ -29,7 +29,9 @@
     "format": "prettier-eslint --write ./playground/pages/index.vue"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.8.2"
+    "@nuxt/kit": "^3.8.2",
+    "fp-ts": "^2.16.1",
+    "io-ts": "^2.2.21"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

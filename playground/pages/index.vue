@@ -1,12 +1,17 @@
 <script setup lang="ts">
 const route = useRoute();
+const u = io_type({
+  userId: io_number,
+  name: io_string,
+});
+const data = { userId: "1", name: "xx" };
+const decoded = u.decode(data);
 </script>
 
 <template>
   <div>
-    <NuxtLink to="/test">
-      test
-    </NuxtLink>
+    <div>{{ geta(route.fullPath) }}</div>
+    <div>{{ decoded }}</div>
     <h1>Nuxt Routing set up successfully!</h1>
     <p>
       Current route:
